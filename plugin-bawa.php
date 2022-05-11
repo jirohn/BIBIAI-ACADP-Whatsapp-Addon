@@ -34,7 +34,4 @@ if ( is_admin() ) {
 }else{
     // Estamos en modo publico
     include __DIR__ . '/public/bawa-public-frontend.php';
-}
-
-?>
-
+}?>
