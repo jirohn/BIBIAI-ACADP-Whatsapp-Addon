@@ -12,8 +12,8 @@
 /**
  * Activate the plugin.
  */
-include('functions\bawa-functions.php');
-include('public\bawa-public-frontend.php');
+require('functions\bawa-functions.php');
+require('public\bawa-public-frontend.php');
 
 function pluginprefix_activate() { 
     bawa_add_post_to_acadp();
