@@ -30,7 +30,7 @@ register_deactivation_hook( __FILE__, 'pluginprefix_deactivate' );
 
 if ( is_admin() ) {
     // we are in admin mode
-    require_once __DIR__ . '/functions\bawa-functions.php';
+    require_once __DIR__ . '/functions/bawa-functions.php';
 }else{
     // Estamos en modo publico
     require_once __DIR__ . '/public/bawa-public-frontend.php';
