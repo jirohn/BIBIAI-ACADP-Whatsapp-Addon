@@ -43,10 +43,10 @@ add_action('wp_footer', 'bawa_show_whatsapp_button');
 
 function bawa_show_post_details(){
 
-    $thispost = the_post();
+    $thispost = get_the_ID();
     $post = get_post($thispost);
-    $details = $post['post_content'];
-    echo '<div id="details" class="text">'.$details.'</div>';
+    $details = get_post_field('post_content', $post);
+    return '<div id="details" class="text">DETALLES: '. $details . '</div>';
 
 }
 add_shortcode('show_post_details', 'bawa_show_post_details');
