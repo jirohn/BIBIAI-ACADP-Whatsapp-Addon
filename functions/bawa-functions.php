@@ -38,8 +38,7 @@ function bawa_add_meta_to_acadp($postid){
     update_post_meta( $postid, '_wp_desired_post_slug', 'whatsapp' );
     update_post_meta( $postid, 'associate', 'form' );
     update_post_meta( $postid, 'searchable', '1' );
-    update_post_meta( $postid, 'required', '1' );
-    update_post_meta( $postid, 'required', '1' );
+    update_post_meta( $postid, 'required', '0' );
     update_post_meta( $postid, 'order', 'o' );
     update_post_meta( $postid, 'type_search', '' );
     update_post_meta( $postid, 'listings_archive', '1' );
